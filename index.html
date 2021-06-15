@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- kidcode for font awsome  -->
+<script src="https://kit.fontawesome.com/16dcf29601.js" crossorigin="anonymous"></script>
+
+  <link rel="shortcut icon" href="picture/page-icon.jpeg">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarugasan_home_pages</title>
+<style>
+  /*here coloring of body*/
+body{
+    background-color: rgb(36, 35, 35);
+    color: blanchedalmond;
+}
+/*this time only I cannot use the bootstrap class to color so i create id to color the bootstrap nav bar*/
+/* here i color and decorated the anchar tag from nav bar*/
+#a{
+  color:white;
+  text-decoration: yellow underline;
+  font-size: 22px;
+  
+}
+/*here i set the hover property */
+#a:hover{
+    display: inline-block;
+    box-shadow:0 0 4px rgb(228, 221, 235);
+    transform: scale(1.1);
+    text-decoration: none;
+    text-shadow: 2px 0 1px yellow;
+}
+/*this a text in nav bar and colored it */
+.navhead{
+    color: white;
+    padding-right: 10%;
+}
+/*this id prepresent the whole nav bar and i bordered it */
+#navmain{
+    border: 8px double blueviolet;
+    width: 100%;
+/* below two property is represent for sticky position of nav bar */
+/*note one think that {fixed }this property is not use for stricky nav bar */
+/* mind it above two property  */
+    position:sticky;
+    top:0;
+}
+/*this represent the nav icon  default color and background color id black */
+#navb{
+   background-color: white;
+}
+/* this represent the active link in nav bar  */
+.act{
+    background-color: blueviolet;
+}
+/* now style the profile picture */
+.all{
+  text-align: center;
+  font-family: "Trirong", serif;
+}
+img{
+  height: 250px;
+  width: 250px;
+  border-radius: 360px;
+  filter: saturate(2px);
+  border:3px white solid;  
+}
+/* now hovering the img */
+img:hover{
+  box-shadow:0 0 22px blue;
+  transform: scale(1.07);
+}
+.img-2{
+  height: 0;
+  width: 0;
+}
+/* now styling the profession */
+.prof{
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 5px blueviolet double;
+}
+.prof:hover{
+  box-shadow: 0 0 5px white;
+}
+
+/* style the head of the profession */
+span{
+  color:white;
+  text-decoration:yellow underline;
+}
+/* now coloring the icon */
+.far{
+  color: yellow;
+  font-size: 15px;
+}
+/* now using ipad and ipad pro responsive  */
+@media(min-height:1024px){
+  .all{
+    margin-top: 20%;
+  }
+}
+</style>
+</head>
+<body>
+  
+  <!-- this is nav bar extract from bootstrap-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="navmain">
+    <div class="container-fluid">
+      <h2 class="navhead">MORE<i>detail</i></h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" id="navb"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" id="ul">
+          <li class="nav-item">
+            <a class="nav-link active act " id="a"  aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="a" href="Contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="a" href="material.html">Material</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="a" href="qualification.html" tabindex="-1" aria-disabled="true">Qualification</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><br>
+  <!--nav code is finished-->
+  <div class="all">
+    <img class="img-1" src="picture/profile1 (1).jpeg" alt="sarugasan"><br>
+    <img class="img-2" src="picture/profile1 (2).jpeg" alt="sarugasan">
+    <h1>Sarugasan Bsc,Msc,maths</h1>
+    <div class="prof">
+    <h3> <span>Profession:</span></h3>
+    <h4><i class="far fa-snowflake"></i>  Teacher<br> <i class="far fa-snowflake"></i>  Running maths tutorial<br> <i class="far fa-snowflake"></i>  Conpadetive Exam Trainer</h4>  
+    </div>
+
+  </div>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

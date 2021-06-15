@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="picture/page-icon.jpeg">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+
+    <title>Sarugasan_Material</title>
+<style>
+body{
+    background-color: rgb(36, 35, 35);
+    color: white;
+}
+/* nav bar decoration start here */
+/*this is same nav bar in all page so refer the commant in index page */
+#a{
+  color:white;
+  text-decoration: yellow underline;
+  font-size: 22px;
+  word-spacing: 33px;
+}
+#a:hover{
+    display: inline-block;
+    box-shadow:0 0 4px rgb(228, 221, 235);
+    transform: scale(1.1);
+    text-decoration: none;
+    text-shadow: 2px 0 1px yellow;
+    
+}
+.navhead{
+    color: white;
+    padding-right: 10%;
+}
+#navmain{
+    border: 8px double blueviolet;
+    width: 100%;
+/* below two property is represent for sticky position of nav bar */
+/*note one think that {fixed }this property is not use for stricky nav bar */
+/* mind it above two property  */
+    position:sticky;
+    top:0;
+}
+#navb{
+    color: white;
+   background-color: white;
+}
+.act{
+  background-color: blueviolet;
+}
+/* decoration is end for nav bar  */
+.main{
+  color: white;
+}
+.sp{
+  font-family: "Sofia", sans-serif;
+  color: blueviolet;
+  border-bottom:4px  yellow dashed;
+  text-shadow: 3px 1px 0px yellow;
+}
+/*here center the sir name  */
+.sirname{
+text-align: center;
+line-height: 40px;
+}
+hr{
+  color: white;
+}
+.std-list li{
+  display: inline-block;
+}
+.std-list li a{
+  text-decoration: none;
+  color: yellow;
+  background-color: blueviolet;
+  padding: 10px;
+  border-radius: 10px;
+}
+.std-list{
+  word-spacing: 33px;
+}
+.std-list{
+  text-align: center;
+  padding-left: 0;
+}
+/* now decorate the 10th std block */
+.material10{
+  margin: 10px;
+  border: 3px white solid;
+}
+/* now decorate the 11th std block */
+.material11{
+  margin: 10px;
+  border: 3px white solid;
+}
+/* now decorate the 12th std block */
+.material12{
+  margin: 10px;
+  border: 3px white solid;
+}
+
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="navmain">
+    <div class="container-fluid">
+      <h2 class="navhead">MORE<i>detail</i></h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" id="navb"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" id="ul">
+          <li class="nav-item">
+            <a class="nav-link active " id="a"  aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="a" href="Contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link act" id="a" href="material.html">Material</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="a" href="qualification.html" tabindex="-1" aria-disabled="true">Qualification</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="main">
+    <h2 class="sirname">Materials present by <span class="sp">Sarugasan </span>Bsc ,Msc. maths </h2>
+  <hr><hr>
+  </div>
+  <ul class="std-list">
+    <li> <a href="#10th">10th-std</a></li>
+    <li><a href="#11th">11th-std</a></li>
+    <li><a href="#12th">12th-std</a></li>
+  </ul>
+  <div class="material10" id="10th">
+    <h3> content is empty  </h3>
+    <h4> website is under development  </h4>
+  </div><br><br>
+  <div class="material11" id="11th">
+    <h3>content is empty </h3>
+    <h4>website is under development</h4>
+  </div><br><br>
+  <div class="material12" id="12th">
+    <h3>content is empty </h3>
+    <h4>website is under development</h4>
+  </div><br>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

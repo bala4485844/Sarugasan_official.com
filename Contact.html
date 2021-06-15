@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="picture/page-icon.jpeg">
+
+    <!-- CSS only in bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google font code link  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+<!-- font awsome  kid code link  -->
+<script src="https://kit.fontawesome.com/16dcf29601.js" crossorigin="anonymous"></script>
+    <title>Sarugasan_Contact</title>
+<style>
+body{
+    background-color: rgb(36, 35, 35);
+    color: white;
+    
+}
+/* nav bar decoration start here */
+/*this is same nav bar in all page so refer the commant in index page */
+#a{
+  color:white;
+  text-decoration: yellow underline;
+  font-size: 22px;
+  word-spacing: 33px;
+}
+#a:hover{
+    display: inline-block;
+    box-shadow:0 0 4px rgb(228, 221, 235);
+    transform: scale(1.1);
+    text-decoration: none;
+    text-shadow: 2px 0 1px yellow;
+    
+}
+.navhead{
+    color: white;
+    padding-right: 10%;
+}
+#navmain{
+    border: 8px double blueviolet;
+    width: 100%;
+/* below two property is represent for sticky position of nav bar */
+/*note one think that {fixed }this property is not use for stricky nav bar */
+/* mind it above two property  */
+    position:sticky;
+    top:0;
+}
+#navb{
+  color: rgb(26, 25, 25);
+   background-color: white;
+}
+.act{
+    background-color: blueviolet;
+    color: white;
+}
+/* decoration is end for nav bar  */
+/* i raped everythink in .all class without nav bar  */
+.all{
+  font-family: "Sofia", sans-serif;
+  text-align: center;
+}
+/* now decorate heading of social media */
+
+.s-head{
+  text-decoration: yellow underline;
+  text-shadow: 4px 1px blueviolet;
+
+}
+/* now styling icon in the un-order list */
+/* in default .li is block leve and i convet in in inline  */
+ul li{
+    display: inline-block;
+   
+}
+/* now i color the icon  */
+.fa{
+  font-size:33px;
+  color: blueviolet;
+  height:33px;
+  width:40px;
+}
+/* now dont use ul derectly bcoz it affact the nav bor so i use class*/
+.ul li{
+  border:2px white solid;
+  background-color: white;
+  border-radius: 22px;
+}
+.ul{
+  word-spacing: 20px;
+  padding-top: 15px;
+  padding-bottom:15px;
+  border: 5px blueviolet double;
+  width: 50%px;
+  margin-left:auto;
+  margin-right:auto;
+}
+/* now style the head line of email */
+.email h2{
+  color: aqua;
+  text-decoration:yellow underline;
+}
+/* to start to style the form  */
+form{
+  border: 5px blueviolet outset;
+  outline: 5px yellow outset;
+  margin: 10%;
+}
+input:hover,textarea:hover{
+  box-shadow: 0 0 20px blue;
+}
+.form h2{
+  color: rgb(224, 49, 247);
+  text-decoration: whitesmoke underline;
+}
+/* In defaul lable is inline so i convert it into the block */
+label{
+  /* font style of lable is not suitable sa i changed in it*/
+  display:block;
+  font-family: "Trirong", serif;
+}
+/* i dont like a font,while user giving the value so i change  */
+input,textarea{
+  font-family: "Trirong", serif;
+}
+/* now style the submitbutton with active and hover */
+#submit:active{
+  background-color: red;
+}
+
+</style>
+</head>
+<body>
+  <!--nav bar code fron bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="navmain">
+    <div class="container-fluid">
+      <h2 class="navhead">MORE<i>detail</i></h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" id="navb"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" id="ul">
+          <li class="nav-item">
+            <a class="nav-link active " id="a"  aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link act" id="a" href="Contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="a" href="material.html">Material</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="a" href="qualification.html" tabindex="-1" aria-disabled="true">Qualification</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--nav bar code is ended -->
+  <div class="all">
+    <div class="social"><br>
+       <h1 class="s-head">Contact in Social Media </h1><br>
+       <ul class="ul">
+         <li><a target="_blank" href="https://www.facebook.com/saruhasan.pvs"><i class="fa fa-facebook-f"></i></a></li>
+         <li><a target="_blank" href="https://youtube.com/channel/UCXmaeI4KaQ9p18YiCaV25jQ"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+         <li><a target="_blank" href="https://instagram.com/sarugasan5?utm_medium=copy_link"><i class="fa fa-instagram"></i></a></li>
+       </ul>
+    </div>
+    <div class="email">
+      <h2>E-mail Address</h2>
+      <h3>@gmail.com</h3>
+      <hr>
+    </div>
+    <div class="form">
+      <h2>To fill the form for Contact</h2>
+      <form action="https//formsubmit.co/bala44858@email.com" method="POST">
+        <label for="name">Enter Name:</label>
+        <input required id="name" type="text" placeholder="enter your name" name="name" ><br>
+        <label for="mail">Enter e-mail:</label>
+        <input required id="mail" type="email" placeholder="ener your e-mail id"><br>
+        <label for="num">Enter number:</label>
+        <input type="tel" id="num"  maxlength="10" minlength="10" placeholder="optional"><br>
+        <label for="sub">Sub:</label>
+        <input type="text" id="sub" placeholder="subject"><br>
+        <label for="cont">Main Content:</label>
+        <textarea name="content" id="cont" spellcheck="true"  placeholder="give your content" id="" cols="30" rows="10"></textarea>
+        <br>
+        <label for="submit">Give Submit after you done:</label>
+        <input type="submit" id="submit" value="Submit" onclick="alert('Click Ok then e-mail sent to Mr Sarugasan, He soonly Contact you')">
+      </form>
+    </div>
+  </div>
+  
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
